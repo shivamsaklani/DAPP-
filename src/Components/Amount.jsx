@@ -15,7 +15,7 @@ export function CurrentAmount(){
 
 
         }
-,balance);
+,[Wallet]);
    
     return(<Container className="justify-content-center d-flex">
         <p className="text-light mt-3 mb-3">Current SOL in your Account- {balance}</p>

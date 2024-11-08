@@ -9,9 +9,9 @@ import {
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { Layout } from './Components/Layout';
 import { AirDrop } from './Components/AirDrop';
-import { Connect } from './Components/Connect';
-import { Transaction } from './Components/Transaction';
+
 import { Token } from './Components/Token';
+import { Sendtransaction } from './Components/Transaction';
 
 function App() {
   return (
@@ -26,8 +26,7 @@ function App() {
  <Routes>
    <Route path='/' element={<Layout />} >
    <Route path='airdrop' element={<AirDrop/>}/>
-   <Route path='connect' element={<Connect/>}/>
-   <Route path='transaction' element={<Transaction/>}/>
+   <Route path='transaction' element={<Sendtransaction/>}/>
    <Route path='createToken' element={<Token/>}/>
    </Route>
    
